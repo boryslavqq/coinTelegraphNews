@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  cointelegraph:
+    image: cointelegraph
+    build: .
+    env_file:
+      - .env
+    restart: always
